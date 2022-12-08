@@ -11,7 +11,8 @@ students=[["        ","Name:","   Andrew", "Courses:","   MTH1W","   ELSEO","   
 studentlist=["Andrew","Rafi","Dane","Phat","Eleanor","Krystal","Green","Jenny","Khalid"]
 
 while True:
-    x=int(input("Input A number 1-9(input '0' for the student and course code reference list):\n"))
+    print("         ")
+    x=int(input("Input A number 1-9(input '0' for the student and course code reference list)\n(Type any letter to exit the code):\n"))
     if x == 0:
         z=int(input("Input '0' for student list or '1' for course codes.\n"))
         if z==0:
@@ -22,8 +23,7 @@ while True:
                 print(coursecode[k])
     elif x in range(1,10):
         for a in range(len(students)):
-            y=0+a
-            print(students[x-1][y])
+            print(students[x-1][a])
     else:
         print("That student isn't in our database yet.")
         break
